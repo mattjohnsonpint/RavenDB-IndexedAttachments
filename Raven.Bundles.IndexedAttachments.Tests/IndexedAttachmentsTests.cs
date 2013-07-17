@@ -20,7 +20,7 @@ namespace Raven.Bundles.IndexedAttachments.Tests
         //private const string TestDocPath = @"docs\small.pdf";
         //private const string TestDocContentType = "application/pdf";
 
-        protected override void ModifyConfiguration(RavenConfiguration configuration)
+        protected override void ModifyConfiguration(InMemoryRavenConfiguration configuration)
         {
             // Wire up the bundle to the embedded database
             configuration.Catalog.Catalogs.Add(new AssemblyCatalog(typeof(PutAttachmentTrigger).Assembly));

@@ -13,7 +13,7 @@ namespace Raven.Bundles.IndexedAttachments.Tests
 {
     public class HighlightsWithIndexedAttachments : RavenTestBase
     {
-        protected override void ModifyConfiguration(RavenConfiguration configuration)
+        protected override void ModifyConfiguration(InMemoryRavenConfiguration configuration)
         {
             // Wire up the bundle to the embedded database
             configuration.Catalog.Catalogs.Add(new AssemblyCatalog(typeof(PutAttachmentTrigger).Assembly));

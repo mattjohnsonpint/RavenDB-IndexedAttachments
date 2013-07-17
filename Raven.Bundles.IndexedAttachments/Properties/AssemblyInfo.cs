@@ -7,5 +7,6 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyProduct("RavenDB Indexed Attachments Bundle")]
 [assembly: AssemblyCopyright("Copyright © 2012-2013 - Matt Johnson")]
 [assembly: ComVisible(false)]
-[assembly: AssemblyVersion("2.1.0")]
-[assembly: AssemblyFileVersion("2.1.0.8")]
+[assembly: AssemblyVersion("2.5.1")]
+[assembly: AssemblyFileVersion("2.5.1.9")]
+[assembly: AssemblyInformationalVersion("2.5.1-Unstable")]
