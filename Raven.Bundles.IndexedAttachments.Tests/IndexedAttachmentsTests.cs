@@ -3,7 +3,6 @@ using System.ComponentModel.Composition.Hosting;
 using System.IO;
 using System.Linq;
 using Raven.Abstractions.Data;
-using Raven.Bundles.IndexedAttachments;
 using Raven.Database.Config;
 using Raven.Json.Linq;
 using Raven.Tests.Helpers;
