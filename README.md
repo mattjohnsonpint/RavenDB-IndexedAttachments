@@ -16,7 +16,7 @@ Full documentation is pending.  Please review the unit tests for example usage.
 
 ### Manual Installation
 
-Copy the `Raven.Bundles.IndexedAttachments.dll` file to your plugins directory.
+Download the `Raven.Bundles.IndexedAttachments.dll` file from [here](https://github.com/mj1856/RavenDB-IndexedAttachments/releases) and copy it to your plugins directory.
 
 Be sure that "IndexedAttachments" is added to your `Raven/ActiveBundles` setting.  Separate other bundle names with semicolons if necessary.
 
