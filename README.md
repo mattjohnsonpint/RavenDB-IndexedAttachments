@@ -1,7 +1,7 @@
 Indexed Attachents Bundle for RavenDB
 =====================================
 
-This a custom bundle for RavenDB.  The current release requires RavenDB version 2.0.2261 or higher.
+This is a custom bundle for RavenDB.  The current release requires RavenDB version 2.0.2261 or higher.
 
 It automatically extracts text from attachments as they are uploaded, and indexes the text for searching.
 
