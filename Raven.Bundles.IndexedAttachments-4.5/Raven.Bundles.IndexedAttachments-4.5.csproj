@@ -84,6 +84,9 @@
     <Compile Include="..\Raven.Bundles.IndexedAttachments\Utils.cs">
       <Link>Utils.cs</Link>
     </Compile>
+    <Compile Include="..\SharedAssemblyInfo.cs">
+      <Link>Properties\SharedAssemblyInfo.cs</Link>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

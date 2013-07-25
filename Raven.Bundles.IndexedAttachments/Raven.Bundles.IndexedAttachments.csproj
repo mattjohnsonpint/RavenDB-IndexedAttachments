@@ -44,6 +44,9 @@
     <Reference Include="Microsoft.CSharp" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="..\SharedAssemblyInfo.cs">
+      <Link>Properties\SharedAssemblyInfo.cs</Link>
+    </Compile>
     <Compile Include="Extraction\Enums.cs" />
     <Compile Include="Extraction\Extractor.cs" />
     <Compile Include="Extraction\FilterLoader.cs" />

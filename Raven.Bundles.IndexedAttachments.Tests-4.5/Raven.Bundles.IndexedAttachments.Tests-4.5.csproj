@@ -84,6 +84,9 @@
     <Compile Include="..\Raven.Bundles.IndexedAttachments.Tests\Properties\AssemblyInfo.cs">
       <Link>Properties\AssemblyInfo.cs</Link>
     </Compile>
+    <Compile Include="..\SharedAssemblyInfo.cs">
+      <Link>Properties\SharedAssemblyInfo.cs</Link>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Content Include="..\Raven.Bundles.IndexedAttachments.Tests\docs\large.doc">

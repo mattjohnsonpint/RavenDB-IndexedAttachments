@@ -66,6 +66,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="..\SharedAssemblyInfo.cs">
+      <Link>Properties\SharedAssemblyInfo.cs</Link>
+    </Compile>
     <Compile Include="FactIfIFilterInstalledForAttribute.cs" />
     <Compile Include="HighlightsWithIndexedAttachments.cs" />
     <Compile Include="IFilterTests\DocTests.cs" />
