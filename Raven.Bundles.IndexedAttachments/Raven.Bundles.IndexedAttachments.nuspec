@@ -16,4 +16,8 @@
     </dependencies>
     <iconUrl>http://static.ravendb.net/logo-for-nuget.png</iconUrl>
   </metadata>
+  <files>
+    <file src="bin\debug\Raven.Bundles.IndexedAttachments.pdb" target="lib\net40"/>
+    <file src="..\Raven.Bundles.IndexedAttachments-4.5\bin\Debug\Raven.Bundles.IndexedAttachments-4.5.*" target="lib\net45"/>
+  </files>
 </package>
