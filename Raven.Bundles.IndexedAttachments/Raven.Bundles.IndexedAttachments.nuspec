@@ -12,12 +12,12 @@
     <requireLicenseAcceptance>true</requireLicenseAcceptance>
     <tags>nosql ravendb raven document database client bundles attachments fulltext full text ifilter ifilters filter doc docx pdf word excel content</tags>
     <dependencies>
-      <dependency id="RavenDB.Database" version="2.5.2666" />
+      <dependency id="RavenDB.Database" version="2.5.2700" />
     </dependencies>
     <iconUrl>http://static.ravendb.net/logo-for-nuget.png</iconUrl>
   </metadata>
   <files>
     <file src="bin\debug\Raven.Bundles.IndexedAttachments.pdb" target="lib\net40"/>
-    <file src="..\Raven.Bundles.IndexedAttachments-4.5\bin\Debug\Raven.Bundles.IndexedAttachments-4.5.*" target="lib\net45"/>
+    <file src="..\Raven.Bundles.IndexedAttachments-4.5\bin\Debug\Raven.Bundles.IndexedAttachments.*" target="lib\net45"/>
   </files>
 </package>
