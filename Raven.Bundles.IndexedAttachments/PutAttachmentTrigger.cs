@@ -32,12 +32,32 @@ namespace Raven.Bundles.IndexedAttachments
             if (string.IsNullOrEmpty(filename))
                 return;
 
-            RavenJObject doc;
+            // Extract the text in the attachment as a json document
+            var extension = Path.GetExtension(filename);
+            RavenJObject doc = null;
             try
             {
-                // Extract the text in the attachment as a json document
-                var extension = Path.GetExtension(filename);
-                doc = Extractor.GetJson(data, extension);
+                if (data.CanSeek)
+                {
+                    // If the input data stream is seekable, we can use it directly.
+                    doc = Extractor.GetJson(data, extension);
+                }
+                else
+                {
+                    // In server mode, the input stream is HTTP, has already been read, and is nonseekable.
+                    // So we must go get a new stream from where it was stored in the database.
+                    using (Database.DisableAllTriggersForCurrentThread())
+                    {
+                        Database.TransactionalStorage.Batch(storage =>
+                        {
+                            var attachment = storage.Attachments.GetAttachment(key);
+                            using (var stream = attachment.Data())
+                            {
+                                doc = Extractor.GetJson(stream, extension);
+                            }
+                        });
+                    }
+                }
             }
             catch (InvalidOperationException ex)
             {
