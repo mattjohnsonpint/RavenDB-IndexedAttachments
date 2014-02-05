@@ -83,6 +83,7 @@
     <Compile Include="IFilterTests\PdfTests.cs" />
     <Compile Include="IndexedAttachmentsTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ServerModeTests.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="docs\large.doc">
