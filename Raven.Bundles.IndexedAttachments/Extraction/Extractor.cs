@@ -39,8 +39,6 @@ namespace Raven.Bundles.IndexedAttachments.Extraction
                 textWriter.WriteStartArray();
                 propWriter.WriteStartArray();
 
-                string last = null;
-
                 // Outer loop will read chunks from the document.
                 // For those chunks that have text, the contents will be written to json.
                 while (true)
